@@ -7,11 +7,10 @@ import { useRoute } from "./route";
 export default function App() {
   // const [isReady, setIsReady] = useState(false);
   const routing = useRoute(true);
-
+  return <NavigationContainer>{routing}</NavigationContainer>;
   // if (!isReady) {
   //   return (
   //     <AppLoading onFinish={() => setIsReady(true)} onError={console.warn} />
   //   );
   // }
-  return <NavigationContainer>{routing}</NavigationContainer>;
 }
